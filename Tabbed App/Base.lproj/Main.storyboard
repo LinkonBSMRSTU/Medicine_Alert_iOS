@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FCb-1q-d6l">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="mPJ-lw-gfY">
+            <objects>
+                <viewController id="WFh-n4-6jI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="60p-X8-Lak">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cd-fA-tk7">
+                                <rect key="frame" x="22" y="119" width="151" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.95883160041111737" blue="0.9627012613789091" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-171"/>
+                                <state key="normal" title="Health Record" backgroundImage="icons8-health-checkup-50.png"/>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="qlc-DM-kTK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGc-aS-n2q">
+                                <rect key="frame" x="204" y="119" width="151" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-170"/>
+                                <state key="normal" title="Medicibe Reminder" backgroundImage="icons8-calendar-plus-50.png"/>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="Puj-3D-ylV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IiF-gw-fo8">
+                                <rect key="frame" x="204" y="355" width="151" height="163"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-181"/>
+                                <state key="normal" title="Health Calculator" backgroundImage="icons8-heart-with-pulse-50.png"/>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="pZt-kV-TYw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Developed By Linkon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3p-4Z-VSp">
+                                <rect key="frame" x="22" y="614" width="333" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOF-rF-Os4">
+                                <rect key="frame" x="16" y="355" width="155" height="163"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-174"/>
+                                <state key="normal" title="Health Tips" backgroundImage="icons8-healthy-eating-50.png"/>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="BUS-gC-7CO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dHc-RV-xhS"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="CAq-Re-P6S"/>
+                    <navigationItem key="navigationItem" title="Home" largeTitleDisplayMode="always" id="O4H-Gm-x53"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jIu-ee-iNL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="213.59999999999999" y="-1176.1619190404799"/>
+        </scene>
+        <!--Health Calculator-->
+        <scene sceneID="jMa-6h-Wjh">
+            <objects>
+                <viewController title="Health Calculator" id="rRT-6N-Kyp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UKa-Wy-nRN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gol-Ar-zC4">
+                                <rect key="frame" x="0.0" y="64" width="375" height="1887"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nsx-Wp-1Gl">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sugar.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="AeT-2k-s4i">
+                                                <rect key="frame" x="230" y="111" width="137" height="129"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Food Tips" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYM-lW-ioX">
+                                                <rect key="frame" x="97" y="8" width="181" height="43"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vib-Xd-SLM">
+                                                <rect key="frame" x="7" y="112" width="214" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <mutableString key="text">Don't Drink Sugar Calories
+Sugary drinks are the most fattening things you can put into your body.
+
+This is because liquid sugar calories don't get registered by the brain in the same way as calories from solid foods (1).
+
+For this reason, when you drink soda, you end up eating more total calories (2, 3).
+
+Sugary drinks are strongly associated with obesity, type 2 diabetes, heart disease and all sorts of health problems (4, 5, 6, 7).
+
+Keep in mind that fruit juices are almost as bad as soda in this regard. They contain just as much sugar, and the small amounts of antioxidants do NOT negate the harmful effects of the sugar (8).</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nuts.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WAJ-eb-8hP">
+                                                <rect key="frame" x="210" y="406" width="180" height="135"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="J0C-BJ-nxL">
+                                                <rect key="frame" x="15" y="334" width="214" height="394"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">Despite being high in fat, nuts are incredibly nutritious and healthy.
+
+They are loaded with magnesium, vitamin E, fiber and various other nutrients (9).
+
+Studies show that nuts can help you lose weight, and may help fight type 2 diabetes and heart disease.
+
+Additionally, about 10-15% of the calories in nuts aren't even absorbed into the body, and some evidence suggests that they can boost metabolism.
+
+In one study, almonds were shown to increase weight loss by 62% compared to complex carbohydrates.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1. Don't Drink Sugar Calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLW-LG-xom">
+                                                <rect key="frame" x="15" y="59" width="261" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <color key="textColor" red="1" green="0.26665249622404597" blue="0.10962610946513329" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2. Eat Nuts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEf-sj-T6B">
+                                                <rect key="frame" x="17" y="283" width="261" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <color key="textColor" red="0.42222912736733831" green="1" blue="0.070030396366928871" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3e6-df-7Zj">
+                                                <rect key="frame" x="17" y="827" width="214" height="197"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">Coffee has been unfairly demonized. The truth is that it's actually very healthy.
+
+Coffee is high in antioxidants, and studies show that coffee drinkers live longer, and have a reduced risk of type 2 diabetes, Parkinson's disease, Alzheimer's and numerous other diseases </string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4. Don't Fear Coffee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9N7-N7-7TO">
+                                                <rect key="frame" x="16" y="775" width="261" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <color key="textColor" red="0.57939402817876973" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coffe.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fbI-85-w5O">
+                                                <rect key="frame" x="230" y="826" width="137" height="129"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2000" id="b1p-Gq-TFY"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="nsx-Wp-1Gl" firstAttribute="leading" secondItem="gol-Ar-zC4" secondAttribute="leading" id="Ahq-US-SsG"/>
+                                    <constraint firstItem="nsx-Wp-1Gl" firstAttribute="centerX" secondItem="gol-Ar-zC4" secondAttribute="centerX" id="BVU-2S-Wa0"/>
+                                    <constraint firstItem="nsx-Wp-1Gl" firstAttribute="top" secondItem="gol-Ar-zC4" secondAttribute="top" id="OFj-FG-8ti"/>
+                                    <constraint firstAttribute="bottom" secondItem="nsx-Wp-1Gl" secondAttribute="bottom" id="Tc9-xz-Rj0"/>
+                                    <constraint firstAttribute="trailing" secondItem="nsx-Wp-1Gl" secondAttribute="trailing" id="uVL-8a-rfA"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91903606144679995" green="1" blue="0.9288835915842123" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gol-Ar-zC4" firstAttribute="top" secondItem="Xlh-Sh-BC7" secondAttribute="top" id="5Fs-f1-6kD"/>
+                            <constraint firstItem="gol-Ar-zC4" firstAttribute="trailing" secondItem="Xlh-Sh-BC7" secondAttribute="trailing" id="9Do-NR-21m"/>
+                            <constraint firstItem="nsx-Wp-1Gl" firstAttribute="width" secondItem="UKa-Wy-nRN" secondAttribute="width" id="Gi6-sj-xiU"/>
+                            <constraint firstItem="gol-Ar-zC4" firstAttribute="leading" secondItem="Xlh-Sh-BC7" secondAttribute="leading" id="Ikz-VG-WaJ"/>
+                            <constraint firstItem="gol-Ar-zC4" firstAttribute="bottom" secondItem="Xlh-Sh-BC7" secondAttribute="bottom" id="Rpx-6i-4j1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xlh-Sh-BC7"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Health Tips" image="first" id="MHd-H0-y0r"/>
+                    <size key="freeformSize" width="375" height="2000"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lXV-i9-v8B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="452" y="1583.2083958020992"/>
+        </scene>
+        <!--Health Record-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController title="Health Record" id="9pv-A4-QxB" customClass="FirstViewController" customModule="Tabbed_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.96835541661682822" blue="0.99127234073094694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Health Record" image="first" id="acW-dT-cKf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1684" y="985"/>
+        </scene>
+        <!--Medicine Reminder-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController title="Medicine Reminder" id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Tabbed_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.8916289071454131" green="0.99529122581328811" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Medicine Reminder" image="second" id="cPa-gy-q4n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-593" y="985"/>
+        </scene>
+        <!--Health Tips-->
+        <scene sceneID="yhG-m0-lQ6">
+            <objects>
+                <viewController title="Health Tips" id="WqN-dP-G0b" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UFF-R5-dmm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.98186118739047579" blue="0.86865408278677703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="JLk-pk-6FH"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Health Calculator" image="second" id="BJh-MO-HV8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qn5-T7-3h6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1369" y="985"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Jbd-Vq-UxO"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="WqN-dP-G0b" kind="relationship" relationship="viewControllers" id="9Ja-5i-Uo5"/>
+                        <segue destination="rRT-6N-Kyp" kind="relationship" relationship="viewControllers" id="Yt1-7Z-pud"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-594" y="-58"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gAX-zY-4ES">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FCb-1q-d6l" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7rk-fi-Iuo">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="WFh-n4-6jI" kind="relationship" relationship="rootViewController" id="OJC-82-7f6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fwS-aQ-eBB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-802" y="-1176"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="coffe.jpg" width="968" height="681"/>
+        <image name="first" width="30" height="30"/>
+        <image name="icons8-calendar-plus-50.png" width="50" height="50"/>
+        <image name="icons8-health-checkup-50.png" width="50" height="50"/>
+        <image name="icons8-healthy-eating-50.png" width="50" height="50"/>
+        <image name="icons8-heart-with-pulse-50.png" width="50" height="50"/>
+        <image name="nuts.jpg" width="801" height="534"/>
+        <image name="second" width="30" height="30"/>
+        <image name="sugar.jpeg" width="259" height="194"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="qlc-DM-kTK"/>
+    </inferredMetricsTieBreakers>
+</document>
